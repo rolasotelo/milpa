@@ -1,0 +1,89 @@
+{
+    "activeModules": [
+        {
+            "active": true,
+            "name": "logo",
+            "page": 1,
+            "path": "./.repo/configs/logo.txt",
+            "pinned": true,
+            "position": 1
+        },
+        {
+            "active": true,
+            "name": "greetings",
+            "page": 1,
+            "position": 2
+        },
+        {
+            "active": true,
+            "checkpoint": true,
+            "name": "types",
+            "page": 1,
+            "path": "./.repo/configs/commit_types.json",
+            "position": 3
+        },
+        {
+            "active": true,
+            "dependencies": [
+                "types"
+            ],
+            "name": "scopes",
+            "page": 2,
+            "path": "./.repo/configs/commit_scopes.json",
+            "position": 2,
+            "priority": 4
+        },
+        {
+            "active": true,
+            "name": "description",
+            "page": 3,
+            "position": 1
+        },
+        {
+            "active": true,
+            "name": "why",
+            "page": 3,
+            "position": 2,
+            "priority": 3
+        },
+        {
+            "active": true,
+            "name": "body",
+            "page": 3,
+            "position": 3,
+            "priority": 2
+        },
+        {
+            "active": true,
+            "checkpoint": true,
+            "name": "breaking",
+            "page": 3,
+            "position": 4,
+            "priority": 5
+        },
+        {
+            "active": true,
+            "dependencies": [
+                "breaking"
+            ],
+            "name": "breakingmsg",
+            "page": 4,
+            "position": 1,
+            "priority": 6
+        },
+        {
+            "active": true,
+            "name": "coauthors",
+            "page": 5,
+            "path": "./.repo/configs/commit_coauthors.json",
+            "position": 1,
+            "priority": 20
+        },
+        {
+            "active": true,
+            "name": "signedoffby",
+            "page": 4,
+            "position": 1
+        }
+    ]
+}

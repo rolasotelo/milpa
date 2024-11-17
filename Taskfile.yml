@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+
+  precommit:
+      cmds:
+        - echo "🚓・Running pre-commit in all files"
+        - pre-commit run --all-files
+        - echo "Done 🪇"
+      silent: true
