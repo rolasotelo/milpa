@@ -1,0 +1,35 @@
+{
+  "name": "milpa",
+  "version": "1.0.0",
+  "description": "Milpa - online card game",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/rolasotelo/milpa"
+  },
+  "keywords": [
+    "nextjs",
+    "websockets",
+    "tailwindcss"
+  ],
+  "author": "Rolando Sotelo (rola@hey.com)",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "@types/react": "18.3.12",
+    "eslint": "9.15.0",
+    "eslint-config-next": "15.0.3",
+    "typescript": "5.6.3"
+  }
+}

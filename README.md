@@ -38,4 +38,4 @@ This repository uses pre-commit hooks to ensure that the code is formatted and l
 
 #### Configuring pre-commit hooks
 
-The pre-commit hooks are configured using the (.pre-commit-config.yaml file)[.repo/.pre-commit-config.yaml] file. The idea of this file is to ensure that the code is formatted and linted properly. To learn more about configuring pre-commit hooks, see the [pre-commit documentation](https://pre-commit.com/).
+The pre-commit hooks are configured using the [.pre-commit-config.yaml file](.repo/.pre-commit-config.yaml) file. The idea of this file is to ensure that the code is formatted and linted properly. To learn more about configuring pre-commit hooks, see the [pre-commit documentation](https://pre-commit.com/).

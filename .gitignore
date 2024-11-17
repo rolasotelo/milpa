@@ -8,3 +8,6 @@
 !.repo/.gitlint
 # used by goodcommit
 .goodcommit_msg.tmp
+# nextjs project
+node_modules/
+.next/
