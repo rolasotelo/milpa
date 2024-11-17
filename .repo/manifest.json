@@ -1,6 +1,6 @@
 {
-    "license": "UNLICENSED",
-    "orgName": "nantli",
-    "repoDescription": "This is a repository template for nantli projects",
-    "repoName": "repo-template"
+    "license": "MIT",
+    "orgName": "rolasotelo",
+    "repoDescription": "Milpa - online card game",
+    "repoName": "milpa"
 }
