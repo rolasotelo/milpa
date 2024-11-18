@@ -38,6 +38,16 @@
             "emoji": "\ud83d\udcbb",
             "id": "devenv",
             "name": "DevEnv"
+        },
+        {
+            "conditional": [
+                "feat",
+                "fix"
+            ],
+            "description": "Use this when changes are made to the frontend",
+            "emoji": "\ud83c\udf80",
+            "id": "frontend",
+            "name": "Frontend"
         }
     ]
 }
