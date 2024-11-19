@@ -1,30 +1,25 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.4/.schema/devbox.schema.json",
-    "env": {
-        "GOBIN": "$PWD/bin",
-        "GOODCOMMIT_CONFIG_PATH": "$PWD/.repo/configs/config.json",
-        "PATH": "$PWD/bin:$PATH"
-    },
-    "packages": [
-        "gum@latest",
-        "go-task@latest",
-        "python@latest",
-        "go@1.23.2"
-    ],
-    "shell": {
-        "init_hook": [
-            "ln -f $PWD/.repo/.pre-commit-config.yaml $PWD/.pre-commit-config.yaml",
-            "ln -f $PWD/.repo/.gitlint $PWD/.gitlint",
-            ". $VENV_DIR/bin/activate",
-            "pip3 install --upgrade pip",
-            "pip3 install -r $PWD/.repo/requirements.txt",
-            "export PS1='\ud83c\udf3d\u30fbmilpa > '",
-            "pre-commit install",
-            "go install github.com/nantli/goodcommit/cmd/goodcommit@v1.2.0",
-            "alias gc='goodcommit'",
-            "alias pc='pre-commit run --all-files'",
-            "pre-commit install-hooks",
-            "clear"
-        ]
-    }
+  "$schema": "https://raw.githubusercontent.com/jetpack-io/devbox/0.10.4/.schema/devbox.schema.json",
+  "env": {
+    "GOBIN": "$PWD/bin",
+    "GOODCOMMIT_CONFIG_PATH": "$PWD/.repo/configs/config.json",
+    "PATH": "$PWD/bin:$PATH"
+  },
+  "packages": ["gum@latest", "go-task@latest", "python@latest", "go@1.23.2"],
+  "shell": {
+    "init_hook": [
+      "ln -f $PWD/.repo/.pre-commit-config.yaml $PWD/.pre-commit-config.yaml",
+      "ln -f $PWD/.repo/.gitlint $PWD/.gitlint",
+      ". $VENV_DIR/bin/activate",
+      "pip3 install --upgrade pip",
+      "pip3 install -r $PWD/.repo/requirements.txt",
+      "export PS1='\ud83c\udf3d\u30fbmilpa > '",
+      "pre-commit install",
+      "go install github.com/nantli/goodcommit/cmd/goodcommit@v1.2.0",
+      "alias gc='goodcommit'",
+      "alias pc='pre-commit run --all-files'",
+      "pre-commit install-hooks",
+      "clear"
+    ]
+  }
 }

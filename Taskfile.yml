@@ -1,10 +1,31 @@
-version: '3'
+version: "3"
 
 tasks:
-
   precommit:
-      cmds:
-        - echo "🚓・Running pre-commit in all files"
-        - pre-commit run --all-files
-        - echo "Done 🪇"
-      silent: true
+    cmds:
+      - echo "🚓・Running pre-commit in all files"
+      - pre-commit run --all-files
+      - echo "Done 🪇"
+    silent: true
+  commit:
+    cmds:
+      - echo "🔩・Committing changes"
+      - pre-commit run --all-files
+      - goodcommit
+      - echo "Done 🪇"
+    silent: true
+  dev:
+    cmds:
+      - echo "🚀・Running dev server"
+      - npm run dev
+    silent: true
+  lint:
+    cmds:
+      - echo "🧹・Running lint"
+      - npm run lint
+    silent: true
+  pretty:
+    cmds:
+      - echo "🎨・Running prettier"
+      - npx prettier . --write
+    silent: true

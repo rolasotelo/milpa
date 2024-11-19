@@ -1,34 +1,34 @@
 {
-    "types": [
-        {
-            "emoji": "\ud83c\udf1f",
-            "id": "feat",
-            "name": "Feat",
-            "title": "New commit introduces a new feature"
-        },
-        {
-            "emoji": "\ud83d\udc1b",
-            "id": "fix",
-            "name": "Fix",
-            "title": "This commit patches a bug"
-        },
-        {
-            "emoji": "\ud83d\udd27",
-            "id": "refactor",
-            "name": "Refactor",
-            "title": "Use this when improving the codebase"
-        },
-        {
-            "emoji": "\ud83d\udcdd",
-            "id": "docs",
-            "name": "Docs",
-            "title": "Use this when updating documentation"
-        },
-        {
-            "emoji": "\ud83e\uddf0",
-            "id": "chore",
-            "name": "Chore",
-            "title": "For all other tasks"
-        }
-    ]
+  "types": [
+    {
+      "emoji": "\ud83c\udf1f",
+      "id": "feat",
+      "name": "Feat",
+      "title": "New commit introduces a new feature"
+    },
+    {
+      "emoji": "\ud83d\udc1b",
+      "id": "fix",
+      "name": "Fix",
+      "title": "This commit patches a bug"
+    },
+    {
+      "emoji": "\ud83d\udd27",
+      "id": "refactor",
+      "name": "Refactor",
+      "title": "Use this when improving the codebase"
+    },
+    {
+      "emoji": "\ud83d\udcdd",
+      "id": "docs",
+      "name": "Docs",
+      "title": "Use this when updating documentation"
+    },
+    {
+      "emoji": "\ud83e\uddf0",
+      "id": "chore",
+      "name": "Chore",
+      "title": "For all other tasks"
+    }
+  ]
 }
