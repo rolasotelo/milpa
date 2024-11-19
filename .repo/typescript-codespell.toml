@@ -1,0 +1,6 @@
+[tool.codespell]
+#builtin = ["clear","rare","informal","usage","code","names"]
+builtin = "clear,rare,informal,usage,code,names"
+#ignore-words-list = ["uint"]
+#skip=[ "./.*","codespell_lib/data/*","codespell_lib/tests/*"]
+skip="./.*,node_modules/,.next/,.devbox/,.venv/,devbox.lock,package-lock.json,.repo/typescript-codespell.toml"

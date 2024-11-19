@@ -4,6 +4,18 @@
 
 Milpa is an online card game to be played between two players. Both playing as farmers, they will compete to grow the most corn and other typical crops in a traditional Mexican milpa. Each crop has its own requirements and benefits, and the players will have to manage them and their resources to grow the best milpa and earn the most points.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Pre-requisites](#pre-requisites)
+- [Usage](#usage)
+  - [Committing changes](#committing-changes)
+    - [Configuring goodcommit](#configuring-goodcommit)
+  - [Running pre-commit hooks](#running-pre-commit-hooks)
+    - [Configuring pre-commit hooks](#configuring-pre-commit-hooks)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Pre-requisites
 
 - devbox: https://www.jetify.com/devbox/docs/configuration/
@@ -22,7 +34,7 @@ If you use GitHub Codespaces, `devbox` is already installed.
 2. cd into the repository
 3. Run `devbox shell` to start the development environment
 
-### Commiting changes
+### Committing changes
 
 Goodcommit is a cli tool that allows you to create commit messages in a structured way. After stagging your changes, run `goodcommit` or the alias `gc` and follow the prompts to create a commit message and commit the changes.
 

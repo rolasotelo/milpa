@@ -30,7 +30,7 @@ export default function Page() {
               width={50}
               height={50}
             />
-            <span className="sr-only">Leaderboard</span>
+            <span className="sr-only">Leaderbaord</span>
           </button>
         </div>
       </nav>
