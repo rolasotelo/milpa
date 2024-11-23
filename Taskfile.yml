@@ -11,6 +11,7 @@ tasks:
     cmds:
       - echo "🔩・Committing changes"
       - pre-commit run --all-files
+      - npm run lint
       - goodcommit
       - echo "Done 🪇"
     silent: true
