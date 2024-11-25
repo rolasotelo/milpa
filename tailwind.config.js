@@ -1,150 +1,81 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./src/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         colors: {
-            milpaBeige: {
-              light: "#e1d8cc",
-              default: "#c3b19a",
-              dark: "#61584d",
+            beige: {
+              50: "#e1d8cc",
+              100: "#c3b19a",
+              900: "#61584d",
             },
-            milpaBlue: {
-              light: "#939aaa",
-              default: "#283556",
-              dark: "#141a2b",
+            blue: {
+              50: "#939aaa",
+              100: "#283556",
+              900: "#141a2b",
             },
-            milpaPink: {
-              light: "#e398b0",
-              default: "#c83262",
-              dark: "#641931",
+            pink: {
+              50: "#e398b0",
+              100: "#c83262",
+              900: "#641931",
             },
-            milpaGreen: {
-              light: "#7c8c03",
-              default: "#324001",
-              dark: "#1a2601",
+            green: {
+              50: "#7c8c03",
+              100: "#324001",
+              900: "#1a2601",
+            },
+            black: {
+              50: "#1a1a1a",
+              100: "#141414",
+              900: "#000000",
             },
           },
       extend: {
         spacing: {
-          "60rem": "60rem",
-          "35rem": "35rem",
-          "38rem": "38rem",
-          "20.38rem": "20.38rem",
-          "27.5rem": "27.5rem",
-          "32.5rem": "32.5rem",
-          "49.81rem": "49.81rem",
-          "4.38rem": "4.38rem",
+          'hero': '20.38rem',
+          'hero-web': '960px',
+          'hero-height': '560px',
         },
         backgroundImage: {
-          "button-menu":
-            "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#menu-button-usage')",
-          "button-menu-pressed":
-            "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#menu-button-pressed-usage')",
-          "button-leaderboard":
-            "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#leaderboard-button-usage')",
-          "button-leaderboard-pressed":
-            "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#leaderboard-button-pressed-usage')",
-          "button-logo":
-            "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#logo-button-usage')",
-          "button-logo-pressed":
-            "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#logo-button-pressed-usage')",
-          "button-blue": "url('/buttons.svg#blue-button-usage')",
-          "button-blue-pressed": "url('/buttons.svg#blue-button-pressed-usage')",
-          "button-pink": "url('/buttons.svg#pink-button-usage')",
-          "button-pink-pressed": "url('/buttons.svg#pink-button-pressed-usage')",
-          "nopal-herobox": "url('/welcome.svg#nopal-herobox-usage')",
-          "milpa-web": "url('/welcome.svg#milpa-web-herobox-usage')",
-          "milpa-mobile": "url('/welcome.svg#milpa-mobile-herobox-usage')",
-          "mountains-herobox": "url('/welcome.svg#mountains-herobox-usage')",
-          nopal: "url('/welcome.svg#nopal-usage')",
-          "corn-box": "url('/welcome.svg#corn-box-usage')",
-          "create-background": "url('/create.svg#create-background-usage')",
-          "join-background": "url('/create.svg#join-background-usage')",
-          "green-banner": "url('/banners.svg#green-banner-usage')",
-          "green-banner-mobile": "url('/banners.svg#green-banner-mobile-usage')",
-          "green-input": "url('/banners.svg#green-input-usage')",
-          "pink-input": "url('/banners.svg#pink-input-usage')",
-          "brush-green-1": "url('/art.svg#brush-green-1-usage')",
-          "brush-pink-1": "url('/art.svg#brush-pink-1-usage')",
-          "brush-pink-2": "url('/art.svg#brush-pink-2-usage')",
-          "brush-pink-3": "url('/art.svg#brush-pink-3-usage')",
-          "brush-pink-4": "url('/art.svg#brush-pink-4-usage')",
-          "symbol-corner-1": "url('/art.svg#symbol-corner-1-usage')",
-          "symbol-corner-2": "url('/art.svg#symbol-corner-2-usage')",
-          "symbol-corner-3": "url('/art.svg#symbol-corner-3-usage')",
-          "symbol-corner-4": "url('/art.svg#symbol-corner-4-usage')",
-          "symbol-divisor": "url('/art.svg#symbol-divisor-usage')",
-          "card-gold": "url('/leaderboard.svg#card-gold-usage')",
-          "card-green": "url('/leaderboard.svg#card-green-usage')",
-          "card-pink": "url('/leaderboard.svg#card-pink-usage')",
-          farmer: "url('/leaderboard.svg#farmer-usage')",
-        },
-        margin: {
-          "herobox-top-web": "86px",
+          // Navbar buttons
+          'nav-menu': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#menu-button-usage')",
+          'nav-menu-active': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#menu-button-pressed-usage')",
+          'nav-leaderboard': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#leaderboard-button-usage')",
+          'nav-leaderboard-active': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#leaderboard-button-pressed-usage')",
+          'nav-logo': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#logo-button-usage')",
+          'nav-logo-active': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#logo-button-pressed-usage')",
+
+          // Action buttons
+          'btn-blue': "url('/buttons.svg#blue-button-usage')",
+          'btn-blue-active': "url('/buttons.svg#blue-button-pressed-usage')",
+          'btn-pink': "url('/buttons.svg#pink-button-usage')",
+          'btn-pink-active': "url('/buttons.svg#pink-button-pressed-usage')",
+
+          // Hero section
+          'hero-nopal': "url('/welcome.svg#nopal-herobox-usage')",
+          'hero-milpa-desktop': "url('/welcome.svg#milpa-web-herobox-usage')",
+          'hero-milpa-mobile': "url('/welcome.svg#milpa-mobile-herobox-usage')",
+          'hero-mountains': "url('/welcome.svg#mountains-herobox-usage')",
+
+          // Decorative elements
+          'corner-1': "url('/art.svg#symbol-corner-1-usage')",
+          'corner-4': "url('/art.svg#symbol-corner-4-usage')",
+          'brush-1': "url('/art.svg#brush-pink-1-usage')",
+          'brush-2': "url('/art.svg#brush-pink-2-usage')",
         },
         screens: {
-          tablet: "960px",
+          'desktop': '960px',
         },
-        width: {
-          "input-3d": "300px",
-          "button-square": "50px",
-          "herobox-web": "960px",
-          mountains: "1366px",
-          "milpa-web": "590px",
-          "milpa-mobile": "205px",
-          "nopal-herobox": "900px",
-          "symbol-divisor": "196px",
-          "brush-pink-1": "287px",
-          "brush-pink-2": "267px",
-          "brush-pink-3": "278px",
-          "brush-pink-4": "373px",
-          "brush-green-1": "875px",
-          nopal: "353px",
-          "corn-box": "156px",
-          "leaderboard-card": "172px",
-          "leaderboard-card-small": "111.193px",
-          farmer: "504px",
-          milpa: "450px",
-          "milpa-board-mobile": "270px",
-          // ! Old, remove when possible
-          "3/8": "37.5%",
-          "2/8": "25%",
+        boxShadow: {
+          'frame': '4px 4px 0px 0px rgba(30,58,138,0.3)',
         },
-        height: {
-          "input-3d": "50px",
-          "button-square": "50px",
-          "herobox-web": "560px",
-          mountains: "550px",
-          "milpa-web": "220px",
-          "milpa-mobile": "276px",
-          "nopal-herobox": "650px",
-          nopal: "199px",
-          "corn-box": "83px",
-          "symbol-divisor": "66px",
-          "brush-pink-1": "451px",
-          "brush-pink-2": "251px",
-          "brush-pink-3": "560px",
-          "brush-pink-4": "547px",
-          "brush-green-1": "504px",
-          "leaderboard-card": "232px",
-          "leaderboard-card-small": "150px",
-          farmer: "354px",
-          milpa: "450px",
-          "milpa-board-mobile": "270px",
-          // ! Old, remove when possible
-          "navbar-height": "50px",
+        transformOrigin: {
+          'left': '0% 0%',
+          'top': '100% 0%',
         },
-        maxWidth: {
-          "navbar-width": "960px",
-          "100vw": "100vw",
-        },
-        inset: {
-          "-94px": "-94px",
-          "170px": "165px",
+        fontFamily: {
+          'bubblegum': ['var(--font-bubblegum)', 'cursive'],
         },
       },
     },
