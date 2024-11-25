@@ -1,111 +1,83 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        olive: {
-          DEFAULT: "#7D8920",
-          100: "#191b06",
-          200: "#32370d",
-          300: "#4a5213",
-          400: "#636d1a",
-          500: "#7d8920",
-          600: "#afc02d",
-          700: "#c9d859",
-          800: "#dbe590",
-          900: "#edf2c8",
+    content: [
+      "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    ],
+    theme: {
+        colors: {
+            beige: {
+              50: "#e1d8cc",
+              100: "#c3b19a",
+              900: "#61584d",
+            },
+            blue: {
+              50: "#939aaa",
+              100: "#283556",
+              900: "#141a2b",
+            },
+            pink: {
+              50: "#e398b0",
+              100: "#c83262",
+              900: "#641931",
+            },
+            green: {
+              50: "#7c8c03",
+              100: "#324001",
+              900: "#1a2601",
+            },
+            black: {
+              50: "#1a1a1a",
+              100: "#141414",
+              900: "#000000",
+            },
+          },
+      extend: {
+        spacing: {
+          'hero': '20.38rem',
+          'hero-web': '960px',
+          'hero-height': '560px',
         },
-        seasalt: {
-          DEFAULT: "#F8F7F7",
-          100: "#352e2e",
-          200: "#6a5c5c",
-          300: "#9c8d8d",
-          400: "#cac2c2",
-          500: "#f8f7f7",
-          600: "#f9f8f8",
-          700: "#fbfafa",
-          800: "#fcfcfc",
-          900: "#fefdfd",
+        backgroundImage: {
+          // Navbar buttons
+          'nav-menu': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#menu-button-usage')",
+          'nav-menu-active': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#menu-button-pressed-usage')",
+          'nav-leaderboard': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#leaderboard-button-usage')",
+          'nav-leaderboard-active': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#leaderboard-button-pressed-usage')",
+          'nav-logo': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#logo-button-usage')",
+          'nav-logo-active': "url('https://milpa-cardgame.s3.us-east-2.amazonaws.com/navbar.svg#logo-button-pressed-usage')",
+
+          // Action buttons
+          'btn-blue': "url('/buttons.svg#blue-button-usage')",
+          'btn-blue-active': "url('/buttons.svg#blue-button-pressed-usage')",
+          'btn-pink': "url('/buttons.svg#pink-button-usage')",
+          'btn-pink-active': "url('/buttons.svg#pink-button-pressed-usage')",
+
+          // Hero section
+          'hero-nopal': "url('/welcome.svg#nopal-herobox-usage')",
+          'hero-milpa-desktop': "url('/welcome.svg#milpa-web-herobox-usage')",
+          'hero-milpa-mobile': "url('/welcome.svg#milpa-mobile-herobox-usage')",
+          'hero-mountains': "url('/welcome.svg#mountains-herobox-usage')",
+
+          // Decorative elements
+          'corner-1': "url('/art.svg#symbol-corner-1-usage')",
+          'corner-4': "url('/art.svg#symbol-corner-4-usage')",
+          'brush-1': "url('/art.svg#brush-pink-1-usage')",
+          'brush-2': "url('/art.svg#brush-pink-2-usage')",
         },
-        cool_gray: {
-          DEFAULT: "#7E869D",
-          100: "#181a20",
-          200: "#303440",
-          300: "#484e60",
-          400: "#606880",
-          500: "#7e869d",
-          600: "#969db0",
-          700: "#b1b5c4",
-          800: "#cbced8",
-          900: "#e5e6eb",
+        screens: {
+          'desktop': '960px',
         },
-        dark_moss_green: {
-          DEFAULT: "#4D5717",
-          100: "#101205",
-          200: "#202309",
-          300: "#2f350e",
-          400: "#3f4713",
-          500: "#4d5717",
-          600: "#879728",
-          700: "#b8cd42",
-          800: "#d0de81",
-          900: "#e7eec0",
+        boxShadow: {
+          'frame': '4px 4px 0px 0px rgba(30,58,138,0.3)',
         },
-        dogwood_rose: {
-          DEFAULT: "#CA2F62",
-          100: "#280914",
-          200: "#511328",
-          300: "#791c3b",
-          400: "#a2264f",
-          500: "#ca2f62",
-          600: "#d75681",
-          700: "#e181a1",
-          800: "#ebabc0",
-          900: "#f5d5e0",
+        transformOrigin: {
+          'left': '0% 0%',
+          'top': '100% 0%',
         },
-        puce: {
-          DEFAULT: "#CF8A9A",
-          100: "#31141b",
-          200: "#622836",
-          300: "#943c51",
-          400: "#bc5a71",
-          500: "#cf8a9a",
-          600: "#d9a2af",
-          700: "#e3b9c3",
-          800: "#ecd1d7",
-          900: "#f6e8eb",
-        },
-        drab_dark_brown: {
-          DEFAULT: "#3C3918",
-          100: "#0c0b05",
-          200: "#171609",
-          300: "#23210e",
-          400: "#2f2c13",
-          500: "#3c3918",
-          600: "#787230",
-          700: "#b5ac48",
-          800: "#cec884",
-          900: "#e7e4c2",
-        },
-        khaki: {
-          DEFAULT: "#C2B29D",
-          100: "#2b241b",
-          200: "#574936",
-          300: "#826d51",
-          400: "#a79072",
-          500: "#c2b29d",
-          600: "#cec2b1",
-          700: "#dad1c5",
-          800: "#e7e0d8",
-          900: "#f3f0ec",
+        fontFamily: {
+          'bubblegum': ['var(--font-bubblegum)', 'cursive'],
         },
       },
     },
-  },
-  plugins: [],
-};
+    plugins: [],
+  };
